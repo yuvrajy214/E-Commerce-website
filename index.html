@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            ShopEasy
+        </div>
+
+        <input
+            type="text"
+            id="search"
+            class="search-bar"
+            placeholder="Search products..."
+        >
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#products">Products</a>
+            </li>
+
+            <li>
+                <a href="#categories">Categories</a>
+            </li>
+
+            <li>
+                <a href="#" id="cart-btn">
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Big Summer Sale
+            </h1>
+
+            <p>
+                Up to 50% Off On Electronics & Accessories
+            </p>
+
+            <button class="shop-btn">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+
+    <section
+        class="categories"
+        id="categories"
+    >
+
+        <h2>
+            Shop By Category
+        </h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+
+                <img
+                    src="images/electronics.png"
+                    alt="Electronics"
+                >
+
+                <h3>
+                    Electronics
+                </h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <img
+                    src="images/fashion.png"
+                    alt="Fashion"
+                >
+
+                <h3>
+                    Fashion
+                </h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <img
+                    src="images/watches.png"
+                    alt="Watches"
+                >
+
+                <h3>
+                    Watches
+                </h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <img
+                    src="images/accessories.png"
+                    alt="Accessories"
+                >
+
+                <h3>
+                    Accessories
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Products -->
+
+    <section
+        class="products"
+        id="products"
+    >
+
+        <h2>
+            Featured Products
+        </h2>
+
+        <!-- Products JS se render honge -->
+
+        <div
+            class="product-container"
+            id="product-container"
+        ></div>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="features">
+
+        <h2>
+            Why Choose Us?
+        </h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+
+                <h3>
+                    🚚 Fast Delivery
+                </h3>
+
+                <p>
+                    Quick delivery across India.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>
+                    🔒 Secure Payment
+                </h3>
+
+                <p>
+                    100% safe and secure transactions.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>
+                    ↩ Easy Returns
+                </h3>
+
+                <p>
+                    Hassle-free return policy.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Cart Sidebar -->
+
+    <div
+        class="cart-sidebar"
+        id="cart-sidebar"
+    >
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button id="close-cart">
+                ✖
+            </button>
+
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-footer">
+
+            <h3>
+                Total:
+                ₹<span id="cart-total">0</span>
+            </h3>
+
+            <button id="checkout-btn">
+                Proceed To Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Toast -->
+
+    <div id="toast">
+        Product Added To Cart
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    ShopEasy
+                </h3>
+
+                <p>
+                    Your trusted online shopping destination.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <p>Home</p>
+                <p>Products</p>
+                <p>Categories</p>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    support@shopeasy.com
+                </p>
+
+                <p>
+                    +91 9876543210
+                </p>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 ShopEasy. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
